@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "772879336925",
+    "firebase_url": "https://atris-a240e.firebaseio.com",
+    "project_id": "atris-a240e",
+    "storage_bucket": "atris-a240e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:772879336925:android:3e13006243b501917d6234",
+        "android_client_info": {
+          "package_name": "com.example.atris20"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "772879336925-b7f8aud4s3n96fqdqh6n2mi49i3kbo4g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuOgTVkBX0l_U_fGUhreTzVS834_9G9m8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "772879336925-b7f8aud4s3n96fqdqh6n2mi49i3kbo4g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
