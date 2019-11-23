@@ -2,6 +2,8 @@
 <resources>
     <color name="endColor">#0080A9</color>
     <color name="startColor">#00D763</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="toolbarColour">#003642</color>
     <color name="textColor">#fff</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>

@@ -2,6 +2,7 @@ package com.example.atris20;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -33,6 +34,15 @@ public class LoginActivity extends AppCompatActivity {
         register = findViewById(R.id.registerButton);
         forgotPassword = findViewById(R.id.forgotPassword);
 
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(i);
+            }
+        });
+
+
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,9 +61,6 @@ public class LoginActivity extends AppCompatActivity {
 
                 else if (passwordText.isEmpty() && emailText.isEmpty()) {
                     Toast.makeText(LoginActivity.this, "Pola są puste", Toast.LENGTH_SHORT);
-                }
-                else if (!passwordText.isEmpty() && !emailText.isEmpty()) {
-                    firebaseAuth.createUserWithEmailAndPassword(emailText, passwordText);
                 }
             }
         });

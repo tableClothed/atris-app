@@ -8,13 +8,37 @@
     tools:context=".RegisterActivity">
 
 
-    <include layout="@layout/toolbar"/>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/toolbarColour" />
+
+    <Button
+        android:id="@+id/registerBackToLoginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:text="wróć"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="REJESTRACJA"
+        android:textAlignment="textEnd"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="10dp">
 
         <EditText
             android:id="@+id/registerEmail"
@@ -34,42 +58,42 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="IMIĘ"
+            android:inputType="textPersonName"
             android:textColor="#fff"
             android:textColorHint="#fff"
             android:textColorLink="#fff"
             android:textSize="24sp"
-            android:textStyle="bold"
-            android:hint="IMIĘ"
-            android:inputType="textPersonName" />
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/registerSurname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="NAZWISKO"
+            android:inputType="textPersonName"
             android:textColor="#fff"
-            android:textStyle="bold"
             android:textColorHint="#fff"
             android:textColorLink="#fff"
             android:textSize="24sp"
-            android:hint="NAZWISKO"
-            android:inputType="textPersonName" />
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/registerDateOfBirth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="DATA URODZENIA"
+            android:inputType="date"
             android:textColor="#fff"
-            android:textStyle="bold"
             android:textColorHint="#fff"
             android:textColorLink="#fff"
             android:textSize="24sp"
-            android:hint="DATA URODZENIA"
-            android:inputType="date" />
+            android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/registerPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -82,7 +106,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/registerConfirmPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -105,7 +129,7 @@
             android:background="#FFFFFF"
             android:padding="20dp"
             android:text="STWÓRZ KONTO"
-            android:textColor="#2B8FE7"
+            android:textColor="#009688"
             android:textSize="24sp"
             android:textStyle="bold" />
     </LinearLayout>
